@@ -1,4 +1,4 @@
-# IntroDuction
+# Introduction
 <p>
   Since T-SNE visualization is just suitable to signal label dataset , so when you are using multi-label dataset you need to first choose the signal label sample in your Embedding
 </p>
