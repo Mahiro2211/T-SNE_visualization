@@ -6,7 +6,9 @@
   You can process the embedding using the .mat file format. Here is a simple example to help you deal with T-SNE.py and ensure that your data is in the correct format for input.
 </p>
 
-
+* learning rate :1e-3
+* iter : 400000
+<p>Above param is recommended</p>
 
 ```python
 import scipy.io as scio
