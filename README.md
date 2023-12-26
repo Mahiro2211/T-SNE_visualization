@@ -13,8 +13,8 @@
 ```python
 import scipy.io as scio
 data = scio.loadmat('0.8839152499129482-64-94-NUS-TDH.mat')
-codes = data['r_img']
-labels = data['r_l']
+codes = data['r_img'] # should be (Batch,embed_dim)
+labels = data['r_l'] # should be (Batch,label_dim)
 import numpy as np
 # find signal label featrue
 for i in range(21): # NUSWIDE-TC21 has 21 class
