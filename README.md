@@ -1,4 +1,6 @@
 # Introduction
+# 适用于深度哈希图像检索的T-SNE降维算法可视化的脚本
+
 <p>
   Since T-SNE visualization is just suitable to signal label dataset , so when you are using multi-label dataset you need to first choose the signal label sample in your Embedding
 </p>
