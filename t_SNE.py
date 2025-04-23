@@ -55,7 +55,7 @@ def plot_tsne(epoch,data, label, path, R=2000):
         label = label.argmax(axis=1)
     # colors = np.random.rand(30)
     plt.figure(figsize=(16, 12));
-    embed = TSNE(n_components=2, perplexity=30, lr=50, eps=1e-9, n_iter=1000000, device='cuda').fit_transform(data[:R])
+    embed = TSNE(n_components=2, perplexity=30, lr=50, eps=1e-9, n_iter=50000, device='cuda').fit_transform(data[:R])
     plt.scatter(embed[:, 0], embed[:, 1], c=label[:R], s=10)
     plt.savefig(f"{path}/data_t-SNE+f'{epoch}'.png")
 
